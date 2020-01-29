@@ -35,7 +35,7 @@ age_limit_output(16)
 def report_grade(percent) :
 
     GRADE_CUTOFF = 80
-    if age >= GRADE_CUTOFF:
+    if percent >= GRADE_CUTOFF:
         print('A grade of ', percent, ' indicates mastery.' )
         print(' Keep up the good work!')
     else:
@@ -44,3 +44,23 @@ def report_grade(percent) :
 
 report_grade(70)
 report_grade(80)
+
+def letter_in_word(guess, word) :
+    if guess in word:
+        print(guess, ' is in word. Wow')
+    else:
+        print('you are garbage')
+
+letter_in_word('t', 'secret hangman phrase')
+
+
+
+def hint(color, secret):
+    if color in secret:
+        print (color, ' is there')
+    else
+        print (color, ' isnt in the code. You absolute plebian' )
+
+
+ secret = ['red','red','yellow','yellow','black']
+ hint('red', secret)
