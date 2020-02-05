@@ -51,16 +51,23 @@ def letter_in_word(guess, word) :
     else:
         print('you are garbage')
 
-letter_in_word('t', 'secret hangman phrase')
+letter_in_word('z', 'secret hangman phrase')
 
 
 
 def hint(color, secret):
     if color in secret:
         print (color, ' is there')
-    else
+    else:
         print (color, ' isnt in the code. You absolute plebian' )
 
 
- secret = ['red','red','yellow','yellow','black']
- hint('red', secret)
+
+
+    secret = ['red','red','yellow','yellow','black']
+    hint('red', secret)
+
+
+
+
+
