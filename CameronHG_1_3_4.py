@@ -1,3 +1,5 @@
+from __future__ import print_function # must be first in file
+
 def food_id(food):
     ''' Returns categorization of food
 
@@ -62,6 +64,8 @@ def f(n):
             else:
                 print('N is even')
 
+        else:
+            print('N is odd')
     else:
         print("N isn't an integer")
 
@@ -70,5 +74,23 @@ f(6)
 
 print('---------------------------------------------------------------------------')
 
-a = input('Give me a number between 5 and 6: ')
-print(a)
+
+
+
+import random
+
+def guess_once():
+    secret = random.randint(1, 4)
+    print('I have a number between 1 and 4 inclusive')
+    guess = int(input('Guess: '))
+    if guess == secret:
+        print('Right on! My number was ', guess, end='!\n')
+
+    else:
+        if guess > secret:
+            print("Too high, my number was",secret, end='!\n')
+        else:
+            print("Too low, my number was", secret, end='!\n')
+guess_once()
+
+
