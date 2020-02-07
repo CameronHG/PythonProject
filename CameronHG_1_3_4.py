@@ -91,6 +91,20 @@ def guess_once():
             print("Too high, my number was",secret, end='!\n')
         else:
             print("Too low, my number was", secret, end='!\n')
-guess_once()
+#guess_once()
+
+
+def quiz_decimal(low, high):
+    print("Type a number between", low, "and", high)
+    num = float(input("Type it: "))
+    if low < num < high:
+        print("Good!", low, "<", num, "<", high)
+    else:
+        if num < low:
+            print("No,", num, "is less than", low)
+        else:
+            print("No,", num, "is greater than", high)
+
+quiz_decimal(1, 5)
 
 
